@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Movies" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-17027M0\SQLEXPRESS;Initial Catalog=Movies;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MoviesConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Genre" Member="Genre">
+    <Type Name="Genre">
+      <Column Name="Id" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Movie" Member="Movie">
+    <Type Name="Movie">
+      <Column Name="Tittle" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Director" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Runtime" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="RealeseDate" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
